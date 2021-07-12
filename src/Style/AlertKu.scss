@@ -1,0 +1,69 @@
+/* alert */
+.row-alert {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  z-index: 10;
+  transform: scale(0);
+  &-content {
+    display: flex;
+    padding: 20px;
+    width: 200px;
+    min-height: 45px;
+    border-radius: 7px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid #e23d28;
+    line-height: 45px;
+    text-align: center;
+    color: #e23d28;
+    font-size: 13px;
+    margin: auto;
+    &-emot {
+      margin-right: 10px;
+      display: inline-block;
+      .fa-frown {
+        font-size: 20px;
+        color: #e23d28;
+      }
+    }
+    &-massage {
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes alertku {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.muncul {
+  animation: alertku 2s linear;
+}
